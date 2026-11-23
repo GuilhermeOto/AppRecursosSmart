@@ -20,6 +20,28 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir que o AppRecursosSmart utilize a câmera para tirar fotografias.",
+          "microphonePermission": "Permitir que o AppRecursosSmart utilize o microfone.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permitir que o AppRecursosSmart acesse sua localização enquanto estiver utilizando o aplicativo."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Permitir que o AppRecursosSmart utilize o microfone para gravar áudio."
+        }
+      ]
+    ]
   }
 }
